@@ -5,7 +5,7 @@ import { useSupabaseUser, useUserRole } from "@/components/supabase-user-provide
 import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuShortcut, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import UserLetterIcon from "@/components/users/UserLetterIcon";
-import { CircleUserRound, ContactIcon, LogOut, MessageCircleIcon, RadioIcon, UserRound, UsersIcon } from "lucide-react";
+import { CircleUserRound, ContactIcon, LogOut, MessageCircleIcon, RadioIcon, TestTube, UserRound, UsersIcon } from "lucide-react";
 import Link from 'next/link';
 import { usePathname, useRouter } from "next/navigation";
 import { ReactNode, useCallback, useEffect } from "react";
@@ -43,11 +43,12 @@ export default function PanelClient({ children }: { children: ReactNode }) {
                 <div className="flex flex-row items-center">
                     <Link href="/chats"><Button variant={activePath?.startsWith('/chats') ? "secondary" : "ghost"} className="px-4 justify-start"> <MessageCircleIcon />&nbsp;&nbsp;Chats</Button></Link>
                     <Link href="/contacts"><Button variant={activePath?.startsWith('/contacts') ? "secondary" : "ghost"} className="px-4 justify-start ml-2"><ContactIcon />&nbsp;&nbsp;Contacts</Button></Link>
+                    <Link href="/bulk-send"><Button variant={activePath?.startsWith('/bulk-send') ? "secondary" : "ghost"} className="px-4 justify-start ml-2"> <RadioIcon />&nbsp;&nbsp;Bulk Send</Button></Link>
+                    <Link href="/testing"><Button variant={activePath?.startsWith('/testing') ? "secondary" : "ghost"} className="px-4 justify-start ml-2"> <TestTube />&nbsp;&nbsp;Test</Button></Link>
                     {(() => {
                         if (userRole === 'admin') {
                             return (
                                 <>
-                                    <Link href="/bulk-send"><Button variant={activePath?.startsWith('/bulk-send') ? "secondary" : "ghost"} className="px-4 justify-start ml-2"> <RadioIcon />&nbsp;&nbsp;Bulk Send</Button></Link>
                                     <Link href="/users"><Button variant={activePath?.startsWith('/users') ? "secondary" : "ghost"} className="px-4 justify-start ml-2"> <UsersIcon />&nbsp;&nbsp;Users</Button></Link>
                                 </>
                             )
