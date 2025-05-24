@@ -1,22 +1,4 @@
-# Receevi - The Open Source WhatsApp Business Solution
-
-## Shape project future with Your Feedback
-Help us improve our open-source "Receevi" project! Share your thoughts and suggestions in our community discussion: [Click here](https://github.com/receevi/receevi/discussions/3)
-
-## * IN PROGRESS *
-
-This project is meant to be used as whatsapp cloud api webhook receiver. This project is currently in progress.
-
-## Work done so far
-- Login with admin user working
-- Contacts list just like in whatsapp web
-- Can receive text message
-- Can send text message (Other messsage types are yet to be done)
-![alt text](images/message1.png)
-
-## Roadmap
-- User should be able to view received all type of messages
-
+# Noble Kode - The Open Source WhatsApp Business Solution
 
 ## Installation
 
@@ -48,28 +30,11 @@ This project is meant to be used as whatsapp cloud api webhook receiver. This pr
 - Generate random `WEBHOOK_VERIFY_TOKEN`
     - `openssl rand -hex 32`
 
-### Vercel setup
-- [Deploy to vercel](https://vercel.com/new/git/external?repository-url=https://github.com/receevi/receevi&project-name=receevi&repository-name=receevi)
-- Wait till build is finishd and hit Continue to dashbaoard
-- Go to Settings > Environment variables
-- Add following environment variables
-    - `JWT_SECRET_KEY` - JWT secret key you generated in prerequisites
-    - `WEBHOOK_VERIFY_TOKEN` - Whatsapp webhook verify token you generated in prerequisites
-    - `WHATSAPP_ACCESS_TOKEN` - Whatsapp cloud API permanent token
-    - `FACEBOOK_APP_SECRET` - Facebook app secret
-    - `SUPABASE_URL` - Supabase project URL
-    - `SUPABASE_ANON_KEY` - Supabase anon key
-    - `SUPABASE_SERVICE_ROLE` - Supabase service role
-    - `WHATSAPP_API_PHONE_NUMBER_ID` - Phone number ID
-    - `WHATSAPP_BUSINESS_ACCOUNT_ID` - WhatsApp Business Account ID
-- Go to `Deployment`
-- Click on three dot icon on last deployment and click "Redeploy" to refersh environment variables
-
 ### Supabase setup
 - Create account at https://supabase.com/
 - Create a project
 - Clone this repository in your Computer
-    - `git clone https://github.com/receevi/receevi.git`
+    - `git clone https://github.com/Noble Kode/Noble Kode.git`
 - Install supabase cli from here - https://supabase.com/docs/guides/cli
 - Go to https://app.supabase.com/account/tokens and generate access token
 - Login into supabase cli

@@ -36,7 +36,7 @@ export default function PanelClient({ children }: { children: ReactNode }) {
                 <div className="flex flex-row">
                     <div className="flex flex-row gap-2 items-center">
                         <img src="/assets/img/icon.svg" className="w-8 h-8" />
-                        <div className="text-lg">Receevi</div>
+                        <div className="text-lg">Noble Kode</div>
                     </div>
                 </div>
                 {/* <div className="flex flex-row"> */}
@@ -87,7 +87,7 @@ export default function PanelClient({ children }: { children: ReactNode }) {
                 {/* </div> */}
             </div>
             {/* <div className="flex-[6] max-w-xs border-e-2 border-e-slate-100 p-4">
-                <div className="text-center">Receevi</div>
+                <div className="text-center">Noble Kode</div>
                 <div className="mt-8">
                 </div>
             </div> */}
